@@ -1,0 +1,273 @@
+body {
+    background-color: white;
+    margin: 0;
+}
+
+main {
+    padding: 0 96px 0 96px;
+}
+
+#onePunch {
+    background: linear-gradient(rgba(223, 159, 247, 0.4), white);
+    height: 200px;
+}
+
+li {
+  line-height: 2.5;
+}
+
+#avatar {
+    height: 210px;
+    width: 210px;
+    border-radius: 50%;
+    margin-top: -80px;
+    object-fit: cover;
+    pointer-events: auto;
+    object-position: 50% 0%;
+  }
+
+  #intro {
+    border-left: 4px solid black;
+  }
+
+  p {
+    margin-left: 9px;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  #line-break {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+  }
+
+  #imageSize, #textSize,#toolsSize, #intro, #line-break, #about, #cardSize, #processSize, #socialSize, #skillsSize {
+    width: 900px;
+  }
+
+  #imageContainer, #textContainer, #introContainer, #lineContainer, #aboutContainer, #cardContainer,
+  #processContainer {
+    display: flex;
+    justify-content: center;
+  }
+
+  #interestList {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 30%;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  .cardEd {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 32%;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .cardEd:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+  }
+
+  #cardSize {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .chip {
+    display: inline-block;
+    padding: 0 25px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 50px;
+    border-radius: 25px;
+    background-color: #f1f1f1;
+  }
+  
+  .chip img {
+    float: left;
+    margin: 0 10px 0 -25px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+  }
+
+  .label {
+    color: white;
+    padding: 8px;
+  }
+ 
+  .other, #bioWork, #skillsSize {background-color: #e7e7e7; color: black;border-radius: 6px;}
+  .other1, #pulWork{background-color: #F0F8FF;color: black;
+    border-radius: 6px;}
+    .other2 {background-color: black; color: white;border-radius: 6px;}
+
+  #goWork {
+    background-color:rgba(249, 238, 243, 0.8);color: black;border-radius: 6px;
+  }
+
+  #processSize {
+    background-color: #e7e7e7;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+  }
+
+  i {
+    margin-right: 1rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  #about {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .index {
+    width: 60%;
+  }
+
+  #indexBox {
+    width: 27%;
+  }
+
+#designProcess {
+  margin-left: 1rem;
+}
+
+#socialSize, #toolsSize {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.workComp {
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+.jobTitle {
+  padding-left: 1rem;
+}
+.jobDes {
+  padding-left: 1rem;
+}
+
+.skills {
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+}
+
+.toolCard {
+  display: flex;
+  justify-content: center;
+  /* width: 25%; */
+  /* height: 56px;width: 205px; */
+  
+  border-radius: 3px;
+  background: rgb(241, 241, 239);
+  padding: 16px 16px 16px 12px;
+  margin-bottom: 1rem;
+}
+
+.iconImg {
+  margin-right: 0.5rem;
+  width: 21.312px;
+  height: 21.312px;
+  padding-top: 15px;
+}
+
+.iconName {
+  line-height: 4;
+}
+
+#bioWork, #pulWork, #goWork {
+  display: flex;
+  margin-bottom: 2rem;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#goalsInfo {
+  width: 50%;
+}
+
+.companyInfo {
+  width: 50%;
+}
+
+@media screen and (max-width: 914px) {
+  #indexBox {
+    width: 50%;
+  }  
+  #bioWork, #pulWork, #goWork {
+    display: block;
+    width: 100%;
+  }
+  #goalsInfo, .companyInfo {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 861px) {
+  #socialSize {
+    display: grid;
+  }
+  .other, .other1, .other2 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    padding: 0 16px 0 16px;
+  }
+
+}
+
+@media screen and (max-width: 566px) {
+  #toolsSize, #about, #cardSize{
+    display: block;
+  }
+  .toolCard{
+    margin: auto auto 1rem auto;
+    width: 50%;
+  }
+  .card, .cardEd {
+    width: 80%;
+    margin: auto auto 2rem auto;
+  }
+  p {
+    margin-right: 9px;
+  }
+  .index{
+    display: none;
+  }  
+  #indexBox{
+    margin: auto auto 1rem auto;
+    width: 100%;
+  }
+}
+
+
+
